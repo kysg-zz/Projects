@@ -1,0 +1,34 @@
+#this is code used to generate tickets in Atlassian RestAPI with JSON.
+#Content-Type = application/json
+#authentication type is basic with API token
+#created this while working in postman
+
+
+#this is JSON Body
+
+{
+    "fields": {
+       "project":
+       {
+          "key": "SUP"
+       },
+       "summary": "JIRA REST API TEST",
+       "description": "Creating of an issue using project keys and issue type names using the REST API",
+       "assignee": { "id": "5c05888c6b98a11ccd3643a2" },
+       "duedate": "2021-11-04",
+       "reporter": { "id": "5e7e9acbda12670c3972398b" },
+       "issuetype": {
+          "name": "New-Hire"
+       },       
+       "customfield_10109" : "117 wesgtern ave",
+       "customfield_10172" : "Dave Jones",
+       "customfield_10140" : "mj@assurance.com",
+       "customfield_10107" : { "value": "Test(Do not use in production)" },
+       "customfield_10112" : {"value": "HUBs" },
+       "customfield_10111" : "sales agent",
+       "customfield_10108" : {"value": "HUBs - Lenovo E / L Series" },
+       "customfield_10100" : { "value": "HUB - Houston" },
+       "customfield_10110" : { "name": "5c05888c6b98a11ccd3643a2" },
+       "customfield_10113" : { "value": "FTE" }
+   }
+}
