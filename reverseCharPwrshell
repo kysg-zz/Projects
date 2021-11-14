@@ -1,0 +1,10 @@
+#Reversing Characters array using PowerShell
+#Below example is for reversing a characters array. Approach is similar to reversing number or string based arrays.
+
+$chararray = @(‘a’,‘c’,‘g’,‘d’,‘r’)
+
+$chararray
+
+[array]::Reverse($chararray)
+
+$chararray
